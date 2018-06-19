@@ -21,7 +21,7 @@ System.out.println("222222222222222222222");
 //create ioc container
 factory=new XmlBeanFactory(res);
 System.out.println("444444444");
-obj=factory.getBean("sec",MySecond.class);
+obj=factory.getBean("sec");
 System.out.println("3333333333333");
 ms=(MySecond)obj;
 ms.use();

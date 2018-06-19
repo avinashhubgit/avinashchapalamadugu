@@ -17,7 +17,7 @@ BeanFactory factory=null;
 Myapp cc=null;
 //load the xml document
 System.out.println("##########");
-res= new FileSystemResource("com/h/cngf/appilicationContext.xml");
+res= new FileSystemResource("src/com/h/cngf/appilicationContext.xml");
 //create ioc container
 System.out.println("**********");
 factory=new XmlBeanFactory(res);

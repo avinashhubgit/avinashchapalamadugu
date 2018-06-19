@@ -13,15 +13,18 @@ public void wish(String user)
 {
 	if(date.getHours()<12)
 	{
-		System.out.println("gm"+user);
+		System.out.println("gm-"+user);
+		System.out.println("the time is"+date);
 	}
 	else if(date.getHours()<18)
 	{
-		System.out.println("ga"+user);
+		System.out.println("ga-"+user);
+		System.out.println("the time is"+date);
 	}
 	else if(date.getHours()<21)
 	{
-		System.out.println("ge"+user);
+		System.out.println("ge-"+user);
+		System.out.println("the time is"+date);
 	}
 	else
 	{

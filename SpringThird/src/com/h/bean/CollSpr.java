@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class CollSpr {
-private ArrayList arrl;
-public CollSpr(ArrayList arrll)
+private ArrayList arrayList;
+public void setArrayList(ArrayList arrayList)
 {
-this.arrl=arrl;	
+this.arrayList=arrayList;	
 }
 public void use()
 {
-arrl.add(10);
-arrl.add(50);
-arrl.add(160);
-arrl.add(20);
-arrl.add(9);
-Iterator itr=arrl.iterator();
+arrayList.add(10);
+arrayList.add(50);
+arrayList.add(160);
+arrayList.add(20);
+arrayList.add(9);
+Iterator itr=arrayList.iterator();
 while(itr.hasNext())
 {
 Object obj=itr.next();

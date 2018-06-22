@@ -7,6 +7,6 @@
     
     <bean id="al" class="java.util.ArrayList"/>
     <bean id="spr" class="com.h.bean.CollSpr">
-    <constructor-arg name="ArrayLisy" ref="al"/>
+    <property name="arrayList" ref="al"/>
     </bean>
     </beans>

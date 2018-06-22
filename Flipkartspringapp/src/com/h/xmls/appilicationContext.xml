@@ -4,10 +4,9 @@
     xmlns:context="http://www.springframework.org/schema/context"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
-    
-    <bean id="ss" class="java.util.Scanner"/>
-   
-    <bean id="sec" class="com.h.bean.MySecond">
-    <property name="scr" ref="ss"/>
-    </bean>
+   <bean id="bdart" class="com.h.bluedart.BlueDart"/>
+   <bean id="fflight" class="com.h.firstflight.Firstflight"/>
+   <bean id="fkt" class="com.h.deliver.Flipkart">
+   <property name="delivar" ref="fflight"/>
+   </bean>
     </beans>

@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class MySecond {
 private Scanner scr;
+private System in;
+public MySecond(System in)
+{
+	this.in=in;
+}
 public void setScr(Scanner scr)
 {
 this.scr=scr;	

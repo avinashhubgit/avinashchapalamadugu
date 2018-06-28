@@ -8,7 +8,7 @@ import com.h.inter.Delivery;
 public class Flipkart {
 private Delivery delivar;
 //private Firstflight first;
-void setDelivar(Delivery delivar)
+public void setDelivar(Delivery delivar)
 {
 this.delivar=delivar;	
 }
@@ -19,7 +19,8 @@ this.delivar=delivar;
 	int qty=prdt.length;
 	int bill=qty*10;
 	Random r=new Random();
-	int id=r.nextInt(1000);
+	int id=r.nextInt(99858956);
+	
 	System.out.print("your total bill is"+bill+"your items is"+prdt);
 	delivar.delivary(id );
 }

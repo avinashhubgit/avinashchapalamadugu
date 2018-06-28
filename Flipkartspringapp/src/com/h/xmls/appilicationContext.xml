@@ -7,6 +7,6 @@
    <bean id="bdart" class="com.h.bluedart.BlueDart"/>
    <bean id="fflight" class="com.h.firstflight.Firstflight"/>
    <bean id="fkt" class="com.h.deliver.Flipkart">
-   <property name="delivar" ref="fflight"/>
+   <property name="delivar" ref="bdart"/>
    </bean>
     </beans>

@@ -14,10 +14,7 @@ public class EmployeControl {
 public String convert(EmployeVO vo)throws Exception
 {
 	EmployeDTO dto=null;
-int eno=0;
-String ename=null;
-int sal=0;
-String job=null;
+
 dto=new EmployeDTO();
 dto.setEno(Integer.parseInt(vo.getEno()));
 dto.setEname(vo.getEname());

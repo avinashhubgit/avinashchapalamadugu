@@ -1,0 +1,58 @@
+
+<html>
+
+
+	<script type="text/javascript">
+		function validation(frm) {
+			frm.h1.value = "yes";
+			document.getElementById("pnameerr").innerHTML = "";
+			document.getElementById("pageerr").innerHTML = "";
+
+			var name = frm.pname.value;
+			var age = frm.page.value;
+
+			if ( name == "") {
+		document.getElementById("pnameerr").innerHTML = "<b>name should not be null</b>";
+			frm.name.focus();
+				return false;
+			}
+			if (age == "") {
+				document.getElementById("pageerr").innerHTML = "<b>age should not be null</b>";
+				frm.age.focus();
+				return false;
+			} else if (isNaN(age)) {
+				document.getElementById("pageerr").innerHTML = "<b>page must be numeric value</b>";
+				frm.age.focus();
+				return false;
+			}
+			 else {
+				if (age<0 || age>125) {
+					document.getElementById("pageerr").innerHTML = "<b>age must be in 0 through 125</b>";
+					frm.age.focus();
+					return false;
+
+				}//if
+			}//else
+
+			return true;
+		}
+	</script>
+	
+<body>
+	<h1 style="color: red; text-align: center">communication with
+		server using html with validations</h1>
+	<form action="registerurl" method="get"
+		                                    onsubmit=" return validation(this)">
+		personname::<input type="text" name="pname" /><br> <span
+			style="color: red; text-align: center" id="pnameerr"></span> <br>
+		pesonAge::<input type="password" name="page" /><br> <span
+			style="color: red; text-align: center" id="pageerr"></span> <br>
+		<input type="radio" name="r1" value="m" />male <input type="radio"
+			name="r1" value="f" checked />female<br> <br> <input
+			type="submit" value="register" /> <input type="hidden" name="h1"
+			value="no" />
+
+	</form>
+</body>
+
+</html>

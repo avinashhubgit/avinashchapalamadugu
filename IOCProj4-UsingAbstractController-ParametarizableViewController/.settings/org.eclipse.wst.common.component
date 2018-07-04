@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+        
+    <wb-module deploy-name="IOCProj3-UsingDifferentTypesOfControllers">
+                
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+                
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+                
+        <property name="java-output-path" value="/IOCProj3-UsingDifferentTypesOfControllers/bin"/>
+        <property name="context-root" value="IOCProj3-UsingAbstractController-ParametarizableViewController"/>
+            
+    </wb-module>
+    
+</project-modules>

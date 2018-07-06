@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<!-- configuring handlerMapping class -->
+	<bean id="suhm"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<props>
+				<prop key="welcome.htm">pvc1</prop>
+				<prop key="wish.htm">hvc</prop>
+				<prop key="about.htm">pvc1</prop>
+				<prop key="contact.htm">pvc1</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!-- configuring controller class -->
+
+
+	<bean id="hvc" class="com.nt.controller.HomeViewController" />
+	<bean id="pvc1" class="org.springframework.web.servlet.mvc.UrlFilenameViewController">
+	
+	</bean>
+	
+
+	<!-- configuring the view Resolver -->
+	<bean id="irvr"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/pages/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>

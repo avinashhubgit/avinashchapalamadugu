@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'IOCProj6-UsingTwoContainers'
+rootProject.name = 'IOCProj8-LayeredApplicationWithCommandController'
